@@ -1,0 +1,10 @@
+<h1>Results</h1>
+<p class="medium">Your word <strong><%= params[:your_word]%></strong></p>
+<p class="medium">is worth <strong><%= @score %></strong></p>
+<p>You took <strong><%= @time_taken %></strong> seconds</p>
+<p>Translates to <strong><%= @result[:translation]%></strong> in French</p>
+<p class="message"><%= @result[:message] %></p>
+<br />
+<%= link_to "play again", start_path %>
+
+
